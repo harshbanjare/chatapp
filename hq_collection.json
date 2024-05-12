@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "19d8e535-bff4-430f-844e-26bdc418b2ba",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16501391"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"testname\",\n    \"password\":\"testpassword\",\n    \"email\":\"test@mail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"testname\",\n    \"password\":\"testpassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RuYW1lIiwiaWF0IjoxNzE1NTM0MzIxfQ.o-3u1zQiDvBpTyqPsSrMQ8-8qfci2ClBQ2bzm-BmTjA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/fetchUserList",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fetchUserList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
