@@ -1,2 +1,35 @@
-node_modules
+#.gitignore
+
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore the .DS_Store file
+.DS_Store
+
+# Ignore the .env file
+
 .env
+
+# Ignore the .env.local file
+
+.env.local
+
+# Ignore the .env.development file
+
+.env.development
+
+# Ignore the .env.test file
+
+.env.test
+
+# Ignore the .env.production file
+
+.env.production
+
+# Ignore the .env*.local files
+
+.env*.local
+
+# Ignore package-lock.json
+
+package-lock.json
